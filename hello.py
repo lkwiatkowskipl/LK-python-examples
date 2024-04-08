@@ -16,3 +16,21 @@ s2 = " World!"
 joined_string = s1 + s2
 
 print(s1 + s1 + s2)
+
+name = "Oleg"
+hello_string = f"Hello, {name}!"    #automatycznie wypełnia {name} na name !
+
+print(hello_string)
+
+a = input("Invitation string: ")                  #input !
+
+print(a)
+
+age = input("How old are you? ")
+age = int(age)                     #rzutowanie typów ze string na int tutaj !
+
+print(age)
+
+pi = float('3.14')                  #rzutowanie na float
+pi_str = str(3.14)  
+age_str = str(29)                   #rzutowanie na string
