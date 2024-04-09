@@ -113,3 +113,38 @@ y = 7
 print_max(x, y)  # passing variables as arguments
 
 
+x = 50
+
+def funct():
+    x = 2
+    print('Changing local x to', x)   # Changing local x to 2
+
+funct()
+print('x is still', x)   # x is still 50
+
+
+
+
+x = 50
+
+def func():
+    global x
+    print('x is equal to', x) # x is equal to 50
+    x = 2
+    print('Change the global value of x to', x)    # Change the global value of x to 2
+
+func()
+print('The value of x is (global)', x)    # The value of x is 2
+
+
+def total(a=5, *numbers, **phone_book):
+    print('a (any numbers of params)', a)
+    # pass through all elements of the tuple
+    for single_item in numbers:
+        print('single_item', single_item)
+
+    #pass through all items of the dictionary
+    for first_part, second_part in phone_book.items():
+        print(first_part,second_part)
+
+print(total(10, 1, 2, 3, Jack=1123, John=2231, Inge=1560))
