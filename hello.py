@@ -1,3 +1,7 @@
+import math
+from struct import pack
+
+
 print("Hellooo")
 print("hahahahah !!!!!")
 
@@ -136,15 +140,48 @@ def func():
 func()
 print('The value of x is (global)', x)    # The value of x is 2
 
-
-def total(a=5, *numbers, **phone_book):
+#############?????????????????????????????????????
+def total(a=5, *numbers, **phone_boook):
     print('a (any numbers of params)', a)
     # pass through all elements of the tuple
     for single_item in numbers:
         print('single_item', single_item)
 
     #pass through all items of the dictionary
-    for first_part, second_part in phone_book.items():
+    for first_part, second_part in phone_boook.items():
         print(first_part,second_part)
 
-print(total(10, 1, 2, 3, Jack=1123, John=2231, Inge=1560))
+print(total(10, 1, 2, 3, Spack=4, John=2231, Inge=1560))
+#############?????????????????????????????????????
+
+
+def factorial(n):
+    if n <= 1:
+        return 1
+    else:
+        return n * factorial(n - 1)
+
+print(factorial(5))   # 120
+
+
+sin_pi = math.sin(math.pi)
+print(sin_pi)
+
+#####################kolekcje!!!#########################
+
+some_iterable = ["a", "b", "c"]
+first_letter = some_iterable[0]
+middle_one = some_iterable[1]
+some_iterable[2] = "X"    #sobie zmieniłem 
+last_letter = some_iterable[2]
+
+print(first_letter, middle_one, last_letter)
+
+
+
+
+some_str = "This is awesome string"
+first_five = some_str[1:9]
+
+print(first_five)
+
