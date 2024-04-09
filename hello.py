@@ -185,3 +185,48 @@ first_five = some_str[1:9]
 
 print(first_five)
 
+
+
+
+numbers = [1, 2, 3, 4, 5, 6, 7, 8, 9, 10]
+
+odd_numbers = numbers[::2]  #od której do której i jaki przyrost
+even_numbers = numbers[1::2]
+three_numbers = numbers[2:9:3]
+
+print(odd_numbers)
+print(even_numbers)
+print(three_numbers)
+
+
+
+numbers = ['a', 'b']
+numbers.append('c')      ### funkcje obiektów !! append = add
+print(numbers)  # ['a', 'b', 'c']
+
+print(numbers.count("a"))
+numbers.clear()
+
+print(numbers)
+
+
+
+chars = {'a': 1, 'b': 2}   #słowniki 
+b_num = chars.pop('b')
+
+print(chars)  
+print(b_num) 
+
+chars = {
+    1: "one",
+    2: "two",
+    3: "three"
+}
+b_num = chars.pop(1)
+
+print(chars)  
+print(b_num)  
+
+
+b = set('hi there!')
+print(b)    # {'r', ' ', 'i', 'e', '!', 'h', 't'}
