@@ -2,9 +2,6 @@ import math
 from struct import pack
 
 
-print("Hellooo")
-print("hahahahah !!!!!")
-
 
 a = None
 int_number = 3
@@ -230,3 +227,34 @@ print(b_num)
 
 b = set('hi there!')
 print(b)    # {'r', ' ', 'i', 'e', '!', 'h', 't'}
+
+
+t="hahahahaadASDSADASdas!@#@!#@dasdasADSDADSAD"
+print(t.capitalize())
+print(t.lower())
+print(t.upper())
+
+"""
+print("Topic1_Task1")
+a = float(input("Podaj a: "))
+if a != 0:
+     b = float(input("Podaj b: "))
+     x = -b/a
+     print("Wynik wynosi", x)
+elif a==0 :
+     print("wartość 'a' nie może być zero. Spróbuj jeszcze raz ! ")
+"""
+
+"""
+print("Topic1_Task2") #pole trójkąta prostokątnego
+a = float(input("Podaj bok a: "))
+b = float(input("Podaj bok b: "))
+
+p = (a*b)/2
+c = math.sqrt(a*a + b*b)
+print(f"Pole trójkąta prostokątnego o bokach a={a} i b={b} wynosi p=", p)
+print(f"Długość przeciwprostokątnej trójkąta prostokątnego o bokach a={a} i b={b} wynosi c=", c)
+"""
+
+
+
