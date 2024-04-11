@@ -1,4 +1,5 @@
 import math
+import string
 from struct import pack
 
 
@@ -256,5 +257,66 @@ print(f"Pole trójkąta prostokątnego o bokach a={a} i b={b} wynosi p=", p)
 print(f"Długość przeciwprostokątnej trójkąta prostokątnego o bokach a={a} i b={b} wynosi c=", c)
 """
 
+"""
+print("Topic1_Task3") #suma modułów trzech wartości
+a = float(input("Podaj wart a: "))
+a = abs(a)
+b = float(input("Podaj wart b: "))
+b = abs(b)
+c = float(input("Podaj wart c: "))
+c = abs(c)
 
+print(a+b+c)
+"""
+"""
+print("Topic1_Task4") #znajdz wynik równania z x - x podane
+x = float(input("Podaj wart x: "))
+
+print(2*x**4-3*x**3+4*x**2-5*x+6)
+"""
+
+"""
+print("Topic1_Task5") #odległość pomiędzy punktami
+x1 = float(input("Podaj wart x1: "))
+y1 = float(input("Podaj wart y1: "))
+x2 = float(input("Podaj wart x2: "))
+y2 = float(input("Podaj wart y2: "))
+
+print (math.sqrt((x2-x1)**2+(y2-y1)**2))
+"""
+"""
+print("Topic1_Task6") #liczenie średniej wartości dla liczby czterocyfowej)
+a = (input("Podaj wart a (liczba cztero cyfrowa, naturalna): "))
+a1 = a[0]
+a2 = a[1]
+a3 = a[2]
+a4 = a[3]
+
+b1 = int(a1)
+b2 = int(a2)
+b3 = int(a3)
+b4 = int(a4)
+print((b1 +b2 + b3 +b4)/4)
+
+#inne rozwiązanie:
+a = int(input("Podaj wart a (liczba cztero cyfrowa, naturalna): "))
+
+x1 = a // 1000
+x2 = a % 1000 //100     # // - to dzielenie obcięte do liczb całkowitych !!   11//3 = 3
+x3 = a % 100 //10       # % - to reszta z dzielenia !!   11//3 = 2
+x4 = a % 10
+
+print ((x1+x2+x3+x4)/4)
+"""
+
+print("Topic1_Task12") #ile godzin, minut, sekund
+s = int(input("Podaj wart a (liczba sekund): "))
+
+godz = (s//3600)
+min = (s-godz*3600)//60
+sek = s - ((godz*3600) + (min*60))
+
+print("liczna godzin: ", godz)
+print("liczba minut: ", min)
+print("liczba sekund: ", sek)
 
